@@ -3,6 +3,7 @@ module "resource_group_name" {
   resource_group_name = "rg-todo1988"
   location_name       = "west us"
 }
+# bhai ye upload krna hai
 module "vnet" {
   source              = "../module/azurerm_vnet"
   depends_on          = [module.resource_group_name]
