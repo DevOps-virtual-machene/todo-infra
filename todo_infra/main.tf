@@ -3,6 +3,12 @@ module "resource_group_name" {
   resource_group_name = "rg-todo1988"
   location_name       = "west us"
 }
+module "resource_group_name1" {
+  source              = "../module/azurerm_resource_group"
+  resource_group_name = "rg-todo101988"
+  location_name       = "west us"
+}
+
 # bhai ye upload krna hai
 bhai hindi me ek kahani likhna short me
 module "vnet" {
